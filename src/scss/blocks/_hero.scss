@@ -1,0 +1,35 @@
+.hero {
+	height: 600px;
+	background-image: url('./../../img/hero/hero.jpg');
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 103px;
+
+	@include mediaBg() {
+		background-image: url('./../../img/hero/hero@2x.jpg');
+	}
+
+	.container {
+		height: 100%;
+	}
+
+	&__content {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: flex-start;
+		gap: 27px;
+	}
+
+	&__title {
+		max-width: 494px;
+		font-style: italic;
+		font-weight: 500;
+		font-size: 34px;
+		line-height: 1.8;
+		text-transform: capitalize;
+		color: var(--black);
+	}
+}
