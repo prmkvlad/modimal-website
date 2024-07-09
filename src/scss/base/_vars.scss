@@ -1,0 +1,60 @@
+:root {
+	--container-width: 1254px;
+	--container-padding: 15px;
+
+	--font-family: "Montserrat", sans-serif;
+	// --font-main: 'Montserrat', sans-serif;
+	// --font-accent: 'Montserrat', sans-serif;
+	// --font-titles: var(--font-accent);
+
+	// --page-bg: #fff;
+	// --text-color: #000;
+	// --accent: #ac182c;
+	--link-color: #2578c8;
+
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+
+	// Colors
+	--primary: #748c70;
+	--black: #0c0c0c;
+	--white: #fff;
+	--primary-primary25: #f0f2ef;
+	--primary-primary50: #d1d9cf;
+	--primary-primary100: #b2bfaf;
+	--primary-primary200: #a2b39f;
+	--primary-primary300: #93a690;
+	--primary-primary400: #839980;
+	--primary-primary-600: #5a6d57;
+	--primary-primary-700: #404e3e;
+	--primary-primary750: #343e32;
+	--primary-primary800: #272f25;
+	--primary-primary900: #0d100c;
+	--neutral-backgroundfaf9f5: #faf9f5;
+	--neutral-graydfdfdf: #dfdfdf;
+	--neutral-grayededed: #ededed;
+	--neutral-grayf9f9f9: #f9f9f9;
+	--neutral-graycbcbcb: #cbcbcb;
+	--neutral-grayadadad: #adadad;
+	--neutral-gray868686: #868686;
+	--neutral-gray606060: #606060;
+	--neutral-gray404040: #404040;
+	--neutral-gray202020: #202020;
+	--neutral-gray0c0c0c: #0c0c0c;
+	--state-color-warning-bg: #f7e4c9;
+	--state-color-warning-light: #ecbb77;
+	--state-color-warning: #e09126;
+	--state-color-error-bg: #fff2f2;
+	--state-color-error-light: #ed2e2e;
+	--state-color-error: #c30000;
+	--state-color-success-bg: #f3fdfa;
+	--state-color-success-light: #00ba88;
+	--state-color-success: #00966d;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}

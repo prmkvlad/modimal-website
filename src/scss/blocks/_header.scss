@@ -1,0 +1,21 @@
+.header {
+	padding: 16px 0 18px;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		flex-shrink: 0;
+	}
+
+	&__nav {}
+
+	&__account {}
+
+	&__nav-btn {
+		display: none;
+	}
+}

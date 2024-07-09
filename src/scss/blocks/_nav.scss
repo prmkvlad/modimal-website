@@ -1,0 +1,21 @@
+.nav {
+	font-size: 18px;
+	line-height: 1.8;
+	text-transform: capitalize;
+	text-align: center;
+	color: var(--neutral-gray404040);
+
+	&__list {
+		display: flex;
+		column-gap: 30px;
+		row-gap: 10px;
+
+		a {
+			color: var(--neutral-gray404040);
+
+			&.active {
+				color: var(--black);
+			}
+		}
+	}
+}

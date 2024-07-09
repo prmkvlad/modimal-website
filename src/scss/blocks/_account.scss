@@ -1,0 +1,21 @@
+.account {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+
+	li {
+		height: 24px;
+		aspect-ratio: 1;
+	}
+
+	a {
+		display: inline-block;
+		height: 100%;
+		transition: background 0.3s ease 0s;
+
+		&:hover {
+			background: var(--neutral-grayededed);
+		}
+	}
+
+}
