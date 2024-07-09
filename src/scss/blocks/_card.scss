@@ -1,0 +1,76 @@
+.card {
+	position: relative;
+
+	&__fav-btn {
+		height: 24px;
+		aspect-ratio: 1;
+		position: absolute;
+		top: 24px;
+		right: 24px;
+		z-index: 9;
+	}
+
+	&__btn-fav {
+		height: 100%;
+
+		@media (any-hover: hover) {
+			&:hover .icon--favorite {
+				stroke: var(--state-color-error);
+			}
+		}
+
+		&--selected {
+			fill: var(--state-color-error);
+			stroke: var(--state-color-error);
+		}
+	}
+
+	&__body {
+		padding: 5px 8px;
+		display: grid;
+		gap: 8px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 1.4;
+		text-transform: capitalize;
+
+		a {
+			color: var(--black);
+		}
+
+		a:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__cols {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 10px;
+	}
+
+	&__desc {
+		line-height: 1.8;
+		text-transform: capitalize;
+	}
+
+	&__price {
+		text-align: right;
+		font-weight: 700;
+		line-height: 1.8;
+	}
+
+	&__colors {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+}
