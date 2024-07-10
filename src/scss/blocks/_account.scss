@@ -15,10 +15,10 @@
 	a {
 		display: inline-block;
 		height: 100%;
-		transition: background 0.3s ease 0s;
+		transition: background-color 0.3s ease 0s;
 
 		&:hover {
-			background: var(--neutral-grayededed);
+			background-color: var(--neutral-grayededed);
 		}
 	}
 

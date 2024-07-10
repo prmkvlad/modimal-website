@@ -4,12 +4,24 @@ a.btn {
 	padding: 8px;
 	min-width: 185px;
 	height: 40px;
-	background: var(--white);
+	background-color: var(--white);
 	color: var(--black);
 	font-size: 14px;
 	line-height: 1.71;
 	text-transform: capitalize;
 	text-align: center;
+	transition: background-color 0.3s ease 0s;
+
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: var(--neutral-grayededed);
+		}
+	}
+
+	@include mobile {
+		padding: 8px 16px;
+		min-width: unset;
+	}
 
 	&--small {
 		min-width: unset;
