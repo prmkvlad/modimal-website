@@ -17,13 +17,24 @@
 		@include tablet {
 			column-gap: 15px;
 		}
+	}
 
-		a {
-			color: var(--neutral-gray404040);
-
-			&.active {
-				color: var(--black);
+	&__item {
+		@media (any-hover: hover) {
+			&:hover {
+				.nav__link {
+					color: var(--black);
+				}
 			}
+		}
+	}
+
+	&__link {
+		color: var(--neutral-gray404040);
+		transition: color 0.3s ease 0s;
+
+		&.active {
+			color: var(--black);
 		}
 	}
 }
