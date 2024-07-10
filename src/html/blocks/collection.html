@@ -1,0 +1,13 @@
+<section class="collection">
+	<div class="container">
+		<h2 class="collection__title title">Collection</h2>
+		<div class="collection__cols">
+			<div class="collection__col">
+				@@loop('blocks/card-collection.html', './data/collection-01.json')
+			</div>
+			<div class="collection__col">
+				@@loop('blocks/card-collection.html', './data/collection-02.json')
+			</div>
+		</div>
+	</div>
+</section>
