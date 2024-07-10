@@ -4,6 +4,11 @@
 	background-color: gray;
 	border-radius: 50%;
 
+	@include tablet {
+		width: 16px;
+		height: 16px;
+	}
+
 	&--black {
 		background-color: var(--black);
 	}

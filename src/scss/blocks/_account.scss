@@ -3,6 +3,10 @@
 	align-items: center;
 	gap: 24px;
 
+	@include tablet {
+		gap: 12px;
+	}
+
 	li {
 		height: 24px;
 		aspect-ratio: 1;
@@ -18,4 +22,19 @@
 		}
 	}
 
+	&__menu {
+		display: none;
+		justify-content: center;
+		align-items: center;
+
+		@include mobile {
+			display: flex;
+		}
+	}
+
+	&__person {
+		@include mobile {
+			display: none;
+		}
+	}
 }

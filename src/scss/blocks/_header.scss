@@ -1,5 +1,10 @@
 .header {
 	padding: 16px 0 18px;
+	background-color: var(--white);
+
+	@include mobile {
+		padding: 4px 0 8px;
+	}
 
 	&__row {
 		display: flex;
@@ -9,13 +14,35 @@
 
 	&__logo {
 		flex-shrink: 0;
+
+		@include mobile {
+			max-width: 138px;
+		}
 	}
 
-	&__nav {}
+	&__nav {
+		margin-left: auto;
 
-	&__account {}
+		@include mobile {
+			display: none;
+		}
+	}
 
-	&__nav-btn {
-		display: none;
+	&__account {
+
+		&--first {
+			margin-left: auto;
+			margin-right: 24px;
+
+			@include tablet {
+				margin-right: 12px;
+			}
+
+			@include mobile {
+				order: -1;
+				margin-left: unset;
+				margin-right: 0;
+			}
+		}
 	}
 }
