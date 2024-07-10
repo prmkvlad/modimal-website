@@ -5,6 +5,11 @@
 	border-radius: 50%;
 
 	@include tablet {
+		width: 20px;
+		height: 20px;
+	}
+
+	@include mobile {
 		width: 16px;
 		height: 16px;
 	}

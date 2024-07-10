@@ -3,4 +3,9 @@
 	font-size: 32px;
 	line-height: 1.4;
 	text-transform: capitalize;
+
+	@include mobile {
+		font-weight: 700;
+		font-size: 20px;
+	}
 }
