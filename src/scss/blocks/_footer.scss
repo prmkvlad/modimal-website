@@ -1,4 +1,12 @@
 .footer {
-	// margin-top: 88px;
-	margin-top: 400px;
+	margin-top: 88px;
+	padding: 24px 0;
+	background-color: #000;
+
+	&__copyright {
+		font-size: 12px;
+		line-height: 1.8;
+		text-transform: capitalize;
+		color: var(--neutral-graycbcbcb);
+	}
 }

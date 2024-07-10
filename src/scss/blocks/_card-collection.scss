@@ -1,7 +1,9 @@
 .card-collection {
 	position: relative;
 
-	&__img {}
+	&__img {
+		user-select: none;
+	}
 
 	&__link {
 		position: absolute;

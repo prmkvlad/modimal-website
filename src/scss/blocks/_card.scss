@@ -25,6 +25,10 @@
 		}
 	}
 
+	&__img {
+		user-select: none;
+	}
+
 	&__body {
 		padding: 5px 8px;
 		display: grid;
