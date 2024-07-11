@@ -37,3 +37,27 @@ a.btn {
 		}
 	}
 }
+
+a.btn-outline,
+.btn-outline {
+	display: inline-block;
+	border: 1px solid var(--primary-primary-600);
+	padding: 8px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4px;
+	font-size: 14px;
+	line-height: 1.71;
+	text-transform: capitalize;
+	color: var(--primary-primary-600);
+	transition: color 0.3s ease 0s;
+
+
+	@media (any-hover: hover) {
+		&:hover {
+			color: var(--primary-primary-700);
+		}
+	}
+}

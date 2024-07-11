@@ -2,7 +2,6 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper('.swiper', {
-	// Optional parameters
 	slidesPerView: 2,
 	loop: true,
 	spaceBetween: 16,
@@ -14,7 +13,6 @@ const swiper = new Swiper('.swiper', {
 		}
 	},
 
-	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -23,6 +21,10 @@ const swiper = new Swiper('.swiper', {
 
 });
 
-// Мобильная навигация
+// Mobile navigation
 import mobileNav from './modules/mobile-nav.js';
 mobileNav();
+
+// Accordion for mobile navigation
+import accordion from './modules/accordion.js';
+accordion();

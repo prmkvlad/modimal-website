@@ -23,9 +23,12 @@
 	stroke: var(--black);
 	fill: var(--white);
 	transition: all 0.2s ease 0s;
-
 }
 
 .icon--bag {
+	fill: var(--black);
+}
+
+.icon--arrow-down {
 	fill: var(--black);
 }

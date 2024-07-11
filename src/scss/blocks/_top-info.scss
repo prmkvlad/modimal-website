@@ -1,4 +1,6 @@
 .top-info {
+	position: relative;
+	z-index: 199;
 	padding: 8px 0 7px;
 	background-color: var(--primary-primary-600);
 	font-weight: 600;
