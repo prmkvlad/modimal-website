@@ -70,7 +70,7 @@ gulp.task('html:docs', function () {
 			.pipe(plumber(plumberNotify('HTML')))
 			.pipe(fileInclude(fileIncludeSetting))
 			.pipe(
-				replace(/<img(?:.|\n|\r)*?>/g, function(match) {
+				replace(/<img(?:.|\n|\r)*?>/g, function (match) {
 					return match
 						.replace(/\r?\n|\r/g, '')
 						.replace(/\s{2,}/g, ' ');
@@ -142,7 +142,7 @@ gulp.task('images:docs', function () {
 			.pipe(
 				imagemin([
 					imageminWebp({
-						quality: 85,
+						quality: 90,
 					}),
 				])
 			)
@@ -154,7 +154,7 @@ gulp.task('images:docs', function () {
 				imagemin(
 					[
 						imagemin.gifsicle({ interlaced: true }),
-						imagemin.mozjpeg({ quality: 85, progressive: true }),
+						imagemin.mozjpeg({ quality: 90, progressive: true }),
 						imagemin.optipng({ optimizationLevel: 5 }),
 					],
 					{ verbose: true }
